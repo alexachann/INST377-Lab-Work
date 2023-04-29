@@ -93,7 +93,7 @@ async function mainEvent() {
     injectHTML(currentList);
   });
 
-  textField.addEventListener("click", (event) => {
+  textField.addEventListener("input", (event) => {
     console.log("input", event.target.value);
     const newList = filterList(currentList, event.target.value);
     console.log(newList);
